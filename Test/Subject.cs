@@ -25,7 +25,7 @@ namespace Test
             object? obj;
             /*Type Of Exam*/
             Console.WriteLine("Write the Type of Exam");
-            while (!(Enum.TryParse(typeof(ExamTypes), Console.ReadLine(), true, out obj)))
+            while (!(Enum.TryParse(typeof(ExamTypes), Console.ReadLine(), true, out obj)) || ((int) obj > 1) || (int) obj < 0)
             {
                 Console.WriteLine("Write the Type of Exam");
             }
